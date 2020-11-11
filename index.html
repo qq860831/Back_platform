@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Back platform</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 <body>
-    
+    <div class="d-flex">
+        <input type="checkbox" id="menu-switch">
+        <div class="menu">
+            <div class="header justify-content-center">
+                <h3 class="logo">Admin Demo</h3>
+            </div>
+        </div>
+        <div class="menu-main">
+            <ul>
+                <li class="active">
+                    <a href="#"><span class="iconify" data-icon="ant-design:user-outlined" data-inline="false"></span> 會員管理 </a>
+                </li>
+                <li>
+                    <a href="#"> <span class="iconify" data-icon="ic:baseline-devices-other" data-inline="false"></span> 設備管理 </a>
+                </li>
+                <li>
+                    <a href="#"> <span class="iconify" data-icon="file-icons:config" data-inline="false"></span> 設定 </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
