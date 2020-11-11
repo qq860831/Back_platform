@@ -12,23 +12,217 @@
     <div class="d-flex">
         <input type="checkbox" id="menu-switch">
         <div class="menu">
-            <div class="header justify-content-center">
+            <div class="header">
                 <h3 class="logo">Admin Demo</h3>
             </div>
-        </div>
-        <div class="menu-main">
-            <ul>
-                <li class="active">
-                    <a href="#"><span class="iconify" data-icon="ant-design:user-outlined" data-inline="false"></span> 會員管理 </a>
-                </li>
-                <li>
-                    <a href="#"> <span class="iconify" data-icon="ic:baseline-devices-other" data-inline="false"></span> 設備管理 </a>
-                </li>
-                <li>
-                    <a href="#"> <span class="iconify" data-icon="file-icons:config" data-inline="false"></span> 設定 </a>
-                </li>
-            </ul>
-        </div>
+            <div class="menu-main">
+                <ul>
+                    <li class="active">
+                        <a href="#"><span class="iconify" data-icon="ant-design:user-outlined" data-inline="false"></span> 會員管理 </a>
+                    </li>
+                    <li>
+                        <a href="#"> <span class="iconify" data-icon="ic:baseline-devices-other" data-inline="false"></span> 設備管理 </a>
+                    </li>
+                    <li>
+                        <a href="#"> <span class="iconify" data-icon="file-icons:config" data-inline="false"></span> 設定 </a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        <div class="main">
+            <div class="header justify-content-lg-between pl-3 pr-3">
+                <div class="menu-switch">
+                    <label for="menu-switch">
+                        <span class="iconify hamburger" data-icon="dashicons:menu-alt2" data-inline="false"></span>
+                    </label>
+                </div>
+                <div class="d-flex align-items-center">
+                    <span class="iconify" data-icon="ant-design:user-outlined" data-inline="false"></span>
+					<span class="ml-2">管理員</span>
+                </div>
+            </div>
+            <div class="module-main">
+                <input type="checkbox" id="mode-switch">
+                <nav aria-label="breadcrumb" class="list-mode">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">會員管理</li>
+                        <li class="breadcrumb-item active " aria-current="page">列表</li>
+                        <li class="breadcrumb-item">
+                            <a href="#"><label for="mode-switch">編輯</label></a>
+                        </li>
+                    </ol>
+                </nav>
+                <nav aria-label="breadcrumb" class="editor-mode">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">會員管理</li>
+                        <li class="breadcrumb-item">
+                            <a href="#"><label for="mode-switch">列表</label></a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">編輯</li>
+                    </ol>
+                </nav>
+                <div class="pl-3 pr-3">
+                    <div class="editor-mode">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="">帳號</label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="">信箱</label>
+                                <input type="email" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group text-right">
+                            <button class="btn btn-danger">更新</button>
+                        </div>
+                    </div>
+                    <div class="list-mode">
+                        <div class="d-flex justify-content-end flex-column flex-sm-row">
+                            <div class="mr-sm-3 form-group">
+                                <input type="text" class="form-control" placeholder="關鍵字搜尋" />
+                            </div>
+                            <div class="form-group text-right">
+                                <button class="btn btn-primary">搜尋</button>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <!-- table-stripedc會顯示單雙行使用不同顏色;table-hover滑過去會有效果 -->
+                                <thead>
+                                    <tr>
+                                        <th>操作</th>
+                                        <th>帳號</th>
+                                        <th>信箱</th>
+                                        <th>新增時間</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">編輯</button>
+                                            <button class="btn btn-sm btn-danger">刪除</button>
+                                        </td>
+                                        <td>David</td>
+                                        <td>david@gmail.com</td>
+                                        <td>2020-11-03 10:20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">編輯</button>
+                                            <button class="btn btn-sm btn-danger">刪除</button>
+                                        </td>
+                                        <td>David</td>
+                                        <td>david@gmail.com</td>
+                                        <td>2020-11-03 10:20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">編輯</button>
+                                            <button class="btn btn-sm btn-danger">刪除</button>
+                                        </td>
+                                        <td>David</td>
+                                        <td>david@gmail.com</td>
+                                        <td>2020-11-03 10:20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">編輯</button>
+                                            <button class="btn btn-sm btn-danger">刪除</button>
+                                        </td>
+                                        <td>David</td>
+                                        <td>david@gmail.com</td>
+                                        <td>2020-11-03 10:20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">編輯</button>
+                                            <button class="btn btn-sm btn-danger">刪除</button>
+                                        </td>
+                                        <td>David</td>
+                                        <td>david@gmail.com</td>
+                                        <td>2020-11-03 10:20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">編輯</button>
+                                            <button class="btn btn-sm btn-danger">刪除</button>
+                                        </td>
+                                        <td>David</td>
+                                        <td>david@gmail.com</td>
+                                        <td>2020-11-03 10:20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">編輯</button>
+                                            <button class="btn btn-sm btn-danger">刪除</button>
+                                        </td>
+                                        <td>David</td>
+                                        <td>david@gmail.com</td>
+                                        <td>2020-11-03 10:20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">編輯</button>
+                                            <button class="btn btn-sm btn-danger">刪除</button>
+                                        </td>
+                                        <td>David</td>
+                                        <td>david@gmail.com</td>
+                                        <td>2020-11-03 10:20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">編輯</button>
+                                            <button class="btn btn-sm btn-danger">刪除</button>
+                                        </td>
+                                        <td>David</td>
+                                        <td>david@gmail.com</td>
+                                        <td>2020-11-03 10:20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">編輯</button>
+                                            <button class="btn btn-sm btn-danger">刪除</button>
+                                        </td>
+                                        <td>David</td>
+                                        <td>david@gmail.com</td>
+                                        <td>2020-11-03 10:20:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 分頁 -->
+                        <div class="paginate d-flex justify-content-lg-end align-items-center mb-3">
+                            <div class="mr-2">
+                                <select class="form-control-sm">
+                                    <option value="10">10 筆</option>
+                                    <option value="20">20 筆</option>
+                                    <option value="50">50 筆</option>
+                                    <option value="100">100 筆</option>
+                                </select>
+                            </div>
+                            <div class="mr-2">/</div>
+                            <div class="mr-2">
+                                <select class="form-control-sm">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <div>頁</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </div>
+
 </body>
 </html>
